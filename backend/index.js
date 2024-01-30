@@ -5,6 +5,8 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 const tourRoute = require("./routes/tours.js");
+const userRoute = require("./routes/users.js");
+
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
@@ -23,6 +25,7 @@ app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use("/tours", tourRoute);
+app.use("/users", userRoute);
 
 // for testing
 app.get("/", (req, res) => {

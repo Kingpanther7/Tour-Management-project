@@ -1,8 +1,28 @@
 const express = require("express");
-const { createTour } = require("../controllers/tourController.js");
+const {
+  createTour,
+  updateTour,
+  deleteTour,
+  getSingleTour,
+  getAllTour,
+  getTourBySearch,
+  getFeaturedTour,
+  getTourCounts,
+} = require("../controllers/tourController.js");
 const router = express.Router();
 
-// create new tour
+// create tour data
 router.post("/", createTour);
-
+// update tour data
+router.put("/:id", updateTour);
+// delete tour data
+router.delete("/:id", deleteTour);
+// get single tour data
+router.get("/:id", getSingleTour);
+// get all tour data
+router.get("/", getAllTour);
+// get tour data by search
+router.get("/search/getTourBySearch", getTourBySearch);
+router.get("/search/getFeaturedTours", getFeaturedTour);
+router.get("/search/getTourCount", getTourCounts);
 module.exports = router;
