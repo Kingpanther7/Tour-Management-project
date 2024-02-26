@@ -6,10 +6,18 @@ const cookieParser = require("cookie-parser");
 
 const tourRoute = require("./routes/tours.js");
 const userRoute = require("./routes/users.js");
+const authRoute = require("./routes/auth.js");
+const reviewRoute = require("./routes/reviews.js");
+const bookingRoute = require("./routes/bookings.js");
 
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
+const corsOptions = {
+  origin: true,
+  credentials: true,
+};
+
 // database connection
 mongoose.set("strictQuery", false);
 const connect = async () => {
@@ -21,16 +29,14 @@ const connect = async () => {
   }
 };
 // use middleware
-app.use(cors());
 app.use(express.json());
+app.use(cors(corsOptions));
 app.use(cookieParser());
+app.use("/auth", authRoute);
 app.use("/tours", tourRoute);
 app.use("/users", userRoute);
-
-// for testing
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+app.use("/review", reviewRoute);
+app.use("/booking", bookingRoute);
 
 app.listen(port, () => {
   connect();
