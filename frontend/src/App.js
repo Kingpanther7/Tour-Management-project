@@ -1,7 +1,8 @@
 import "./App.css";
+import Layout from "./assets/Components/Layout/Layout";
 
 function App() {
-  return <h1>Hello , im chen</h1>;
+  return <Layout />;
 }
 
 export default App;
