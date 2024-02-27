@@ -14,11 +14,11 @@ const router = express.Router();
 const { verifyAdmin } = require("../utils/verifyToken.js");
 
 // create tour data
-router.post("/", verifyAdmin, createTour);
+router.post("/", createTour);
 // update tour data
-router.put("/:id", verifyAdmin, updateTour);
+router.put("/:id", updateTour);
 // delete tour data
-router.delete("/:id", verifyAdmin, deleteTour);
+router.delete("/:id", deleteTour);
 // get single tour data
 router.get("/:id", getSingleTour);
 // get all tour data

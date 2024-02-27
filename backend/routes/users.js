@@ -11,12 +11,12 @@ const router = express.Router();
 const { verifyUser, verifyAdmin } = require("../utils/verifyToken.js");
 
 // update user data
-router.put("/:id", verifyUser, updateUser);
+router.put("/:id", updateUser);
 // delete user data
-router.delete("/:id", verifyUser, deleteUser);
+router.delete("/:id", deleteUser);
 // get single user data
-router.get("/:id", verifyUser, getSingleUser);
+router.get("/:id", getSingleUser);
 // get all user data
-router.get("/", verifyAdmin, getAllUser);
+router.get("/", getAllUser);
 
 module.exports = router;
