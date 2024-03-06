@@ -16,7 +16,7 @@
 }
 
 .hero_content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: var(--text-color);
   line-height: 2rem;
 }
@@ -125,6 +125,9 @@
   .featured_tour-title,
   .gallery_title {
     font-size: 2rem;
+  }
+  .gallery {
+    display: none;
   }
 }
 

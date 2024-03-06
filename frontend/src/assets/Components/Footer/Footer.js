@@ -10,19 +10,11 @@ const quick_links = [
     display: "Home",
   },
   {
-    path: "/about",
-    display: "About",
-  },
-  {
     path: "/tours",
     display: "Tours",
   },
 ];
 const quick_links2 = [
-  {
-    path: "/gallery",
-    display: "Gallery",
-  },
   {
     path: "/login",
     display: "Login",
@@ -42,10 +34,10 @@ const Footer = () => {
           <Col lg="3">
             <div className="logo">
               <img src={logo} alt="" />
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Dolorem, deleniti.
-              </p>
+              </p> */}
 
               <div className="social_links d-flex align-items-center gap-4">
                 <span>

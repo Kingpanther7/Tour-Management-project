@@ -3,6 +3,9 @@
   height: 80px;
   line-height: 80px;
 }
+.nav_links2 {
+  padding-left: 100px;
+}
 
 .logo img {
   width: 40%;
@@ -27,6 +30,12 @@
   color: var(--primary-color);
 }
 
+.nav_item2 {
+  display: none;
+}
+.nav_item3 {
+  display: none;
+}
 .mobile_menu {
   font-size: 1.3rem;
   color: var(--secondary-color);
@@ -58,6 +67,19 @@
     left: 0;
     background: #00000035;
     z-index: 999;
+    display: none;
+  }
+
+  /* .nav_item2 {
+    display: flex;
+    margin-top: auto;
+  } */
+  .nav_item3 {
+    display: flex;
+    padding-top: 15rem;
+  }
+  .nav_btns h5,
+  .nav_btns button {
     display: none;
   }
 
