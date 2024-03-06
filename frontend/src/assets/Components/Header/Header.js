@@ -13,12 +13,19 @@ const nav_links = [
     display: "Home",
   },
   {
-    path: "/about",
-    display: "About",
-  },
-  {
     path: "/tours",
     display: "Tours",
+  },
+];
+
+const button_links = [
+  {
+    path: "/login",
+    display: "Login",
+  },
+  {
+    path: "/register",
+    display: "Register",
   },
 ];
 
@@ -79,6 +86,32 @@ const Header = () => {
                     </NavLink>
                   </li>
                 ))}
+
+                {user ? (
+                  <>
+                    <li className="nav_item2">
+                      <h5 className="mb-0">{user.username}</h5>
+                    </li>
+                    <li className="nav_item3">
+                      <Button className="btn btn-dark" onClick={logout}>
+                        Logout
+                      </Button>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    <li className="nav_item">
+                      <Button className="btn secondary__btn">
+                        <Link to="/login">Login</Link>
+                      </Button>
+                    </li>
+                    <li className="nav_item">
+                      <Button className="btn primary__btn">
+                        <Link to="/register">Register</Link>
+                      </Button>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
             {/* ======== menu end ========= */}

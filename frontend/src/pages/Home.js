@@ -21,18 +21,14 @@ const Home = () => {
             <Col lg="6">
               <div className="hero_content">
                 <h1>
-                  Lorem ipsum dolor sit amet{" "}
-                  <span className="highlight"> haha </span>
+                  <span className="highlight">
+                    Embark on a Journey of a Lifetime
+                  </span>
                 </h1>
+                <p>Pack Your Bags. Not Your Worries.</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Each Journey Is a Chapter in Your Personal Adventure Book.
+                  Make It Unforgettable.
                 </p>
               </div>
             </Col>
@@ -71,7 +67,7 @@ const Home = () => {
       </section>
       {/* ========= feautured tour section end ========= */}
       {/* ========== gallery section start ============*/}
-      <section>
+      <section className="gallery">
         <Container>
           <Row>
             <Col lg="12">
