@@ -10,7 +10,6 @@ import galleryImage07 from '../../images/gallery-07.jpg'
 
 const galleryImages = [
     galleryImage01,
-    galleryImage07,
     galleryImage02,
     galleryImage06,
     galleryImage03,
