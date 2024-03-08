@@ -18,17 +18,6 @@ const nav_links = [
   },
 ];
 
-const button_links = [
-  {
-    path: "/login",
-    display: "Login",
-  },
-  {
-    path: "/register",
-    display: "Register",
-  },
-];
-
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
@@ -100,12 +89,12 @@ const Header = () => {
                   </>
                 ) : (
                   <>
-                    <li className="nav_item">
+                    <li className="nav_item2">
                       <Button className="btn secondary__btn">
                         <Link to="/login">Login</Link>
                       </Button>
                     </li>
-                    <li className="nav_item">
+                    <li className="nav_item2">
                       <Button className="btn primary__btn">
                         <Link to="/register">Register</Link>
                       </Button>
