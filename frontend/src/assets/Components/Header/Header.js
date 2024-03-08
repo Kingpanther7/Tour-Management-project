@@ -89,12 +89,12 @@ const Header = () => {
                   </>
                 ) : (
                   <>
-                    <li className="nav_item2">
+                    <li className="nav_item5">
                       <Button className="btn secondary__btn">
                         <Link to="/login">Login</Link>
                       </Button>
                     </li>
-                    <li className="nav_item2">
+                    <li className="nav_item5">
                       <Button className="btn primary__btn">
                         <Link to="/register">Register</Link>
                       </Button>
