@@ -48,7 +48,6 @@ const Booking = ({ tour, avgRating }) => {
         credentials: "include",
         body: JSON.stringify(booking),
       });
-
       const result = await res.json();
 
       if (!res.ok) {
@@ -118,17 +117,17 @@ const Booking = ({ tour, avgRating }) => {
 
         <div className="booking__bottom">
           <ListGroup>
-            <ListGroupItem className="border-0 px-0">
+            <ListGroupItem className="text_info border-0 px-0 bg-transparent text-warning">
               <h5 className="d-flex align-items-center gap-1">
                 €{price} <i class="ri-close-line"></i> 1 person
               </h5>
               <span> €{price}</span>
             </ListGroupItem>
-            <ListGroupItem className="border-0 px-0">
+            <ListGroupItem className="text_info border-0 px-0 bg-transparent text-warning">
               <h5>Service charge</h5>
               <span> €{serviceFee}</span>
             </ListGroupItem>
-            <ListGroupItem className="border-0 px-0">
+            <ListGroupItem className="text_info border-0 px-0 bg-transparent text-warning">
               <h5>Total</h5>
               <span> €{totalAmount}</span>
             </ListGroupItem>
