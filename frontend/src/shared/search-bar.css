@@ -1,7 +1,7 @@
 .search_bar {
   padding: 0 3rem 0.8rem;
   border-radius: 30px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: 0px 0px 20px 0px var(--search-bar-shadow-color);
   width: max-content;
   margin-top: 50px;
 }

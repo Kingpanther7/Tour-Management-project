@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 
@@ -14,16 +14,6 @@ const quick_links = [
     display: "Tours",
   },
 ];
-const quick_links2 = [
-  {
-    path: "/login",
-    display: "Login",
-  },
-  {
-    path: "/register",
-    display: "Register",
-  },
-];
 
 const Footer = () => {
   const year = new Date().getFullYear;
@@ -31,7 +21,7 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col lg="3">
+          <Col lg="5">
             <div className="logo">
               <img src={logo} alt="" />
               {/* <p>
@@ -65,32 +55,21 @@ const Footer = () => {
           </Col>
 
           <Col lg="3">
-            <h5 className="footer_link-title">Discover</h5>
+            <h5 className="footer_link-title">Links</h5>
 
-            <ListGroup className="footer_quick-links">
+            <ul className="footer_quick-links ps-0">
               {quick_links.map((item, index) => (
-                <ListGroupItem key={item} className="ps-0 border-0">
+                <li key={item} className="ps-0 border-0">
                   <Link to={item.path}>{item.display}</Link>
-                </ListGroupItem>
+                </li>
               ))}
-            </ListGroup>
-          </Col>
-          <Col lg="3">
-            <h5 className="footer_link-title">Quick Links</h5>
-
-            <ListGroup className="footer_quick-links">
-              {quick_links2.map((item, index) => (
-                <ListGroupItem key={item} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
+            </ul>
           </Col>
           <Col lg="3">
             <h5 className="footer_link-title">Contact</h5>
 
-            <ListGroup className="footer_quick-links">
-              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+            <ul className="footer_quick-links ps-0">
+              <li className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
                     <i class="ri-map-pin-line"></i>
@@ -98,9 +77,9 @@ const Footer = () => {
                   Address:
                 </h6>
 
-                <p className="mb-0">Järvenpää, Finland</p>
-              </ListGroupItem>
-              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+                <p className="mb-0">Järvenpää,Finland</p>
+              </li>
+              <li className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
                     <i class="ri-mail-line"></i>
@@ -109,8 +88,8 @@ const Footer = () => {
                 </h6>
 
                 <p className="mb-0">eseigbejoseph7@gmail.com</p>
-              </ListGroupItem>
-              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
+              </li>
+              <li className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
                     <i class="ri-phone-fill"></i>
@@ -118,9 +97,9 @@ const Footer = () => {
                   Phone:
                 </h6>
 
-                <p className="mb-0">+358 466583253</p>
-              </ListGroupItem>
-            </ListGroup>
+                <p className="mb-0">+358466583253</p>
+              </li>
+            </ul>
           </Col>
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
