@@ -17,20 +17,20 @@
   background: var(--primary-color);
   color: #fff;
   padding: 0.3rem 0.5rem;
-  border-radius: 3px 0 0 0;
+  border-radius: 0 0 0 3px;
 }
 
 .card_top span i {
-  color: var(--secondary-color);
+  color: #ffc107;
 }
 
 .tour_rating {
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: gray;
 }
 
 .tour_location {
-  color: var(--heading_color);
+  color: black;
   font-weight: 500;
   font-size: 0.9rem;
 }
@@ -48,7 +48,7 @@
 
 .tour_title a {
   text-decoration: none;
-  color: var(--heading_color);
+  color: black;
   transition: 0.3s;
 }
 

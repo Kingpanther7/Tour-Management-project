@@ -93,10 +93,10 @@ const TourDetails = () => {
                   <div className="tour_info">
                     <h2>{title}</h2>
                     <div className="d-flex align-items-center gap-5">
-                      <span className="tour_rating d-flex align-items-center gap-1">
+                      <span className="tour_rating d-flex align-items-center gap-1 bg-transparent">
                         <i
                           class="ri-star-fill"
-                          style={{ color: "var(--secondary-color)" }}
+                          style={{ color: "#ffc107" }}
                         ></i>{" "}
                         {avgRating === 0 ? null : avgRating}
                         {totalRating === 0 ? (
