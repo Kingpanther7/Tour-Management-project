@@ -2,12 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
+  --search-bar: rgba(17, 12, 46, 0.048);
   --primary-color: #ff7e01;
   --secondary-color: #faa935;
-  --heading-color: #0b2727;
-  --text-color: #6e7074;
+  --heading-color: #000000;
+  --menu-color: #ffffff;
+  /* --text-color: #6e7074; */
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
+  --navbar-shadow-color: #002c3540;
+  --search-bar-shadow-color: #ffc10761;
+}
+[data-bs-theme="dark"] {
+  --menu-color: #000000;
+  --search-bar: rgb(117, 111, 111);
+  --primary-color: #0d79c6;
+  --secondary-color: #133ba7;
+  --bs-body-bg: rgb(4 26 35);
+  --my-shadow-color: gray;
+  --heading-color: #ffffff;
+  --bs-list-group-color: #ffffff;
+  --bs-list-group-bg: none;
+  --navbar-shadow-color: #009cbb5e;
+  --search-bar-shadow-color: #1ce5d980;
 }
 
 * {
@@ -47,7 +64,9 @@ ul {
   border-radius: 50px !important;
   padding: 0.4rem 1.5rem !important;
 }
-
+.ri-moon-clear-fill {
+  color: white;
+}
 .primary__btn a {
   font-size: 1.1rem;
   text-decoration: none;

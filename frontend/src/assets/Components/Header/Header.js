@@ -6,6 +6,7 @@ import logo from "../../images/logo.png";
 import "./header.css";
 
 import { AuthContext } from "../../../context/AuthContext";
+import ThemeSwitch from "../../../shared/Dark-mode";
 
 const nav_links = [
   {
@@ -125,7 +126,7 @@ const Header = () => {
                   </>
                 )}
               </div>
-
+              <ThemeSwitch />
               <span className="mobile_menu" onClick={toggleMenu}>
                 <i class="ri-menu-fill"></i>
               </span>
