@@ -9,6 +9,7 @@
   border-radius: 0.5rem;
   border: 1px solid #cacaca68;
   padding: 2rem;
+  margin-bottom: 10px;
 }
 
 .tour_info h2 {
@@ -16,11 +17,7 @@
 }
 
 .tour_info span {
-  /* display: flex;
-  align-items: center;
-  gap: 0.5rem; */
   font-size: 1rem;
-  color: var(--text-color);
 }
 
 .tour_info span i {
@@ -35,7 +32,9 @@
   margin-top: 1rem;
   margin-bottom: 2.5rem;
 }
-
+.tour_rating i {
+  color: #ffc107;
+}
 .tour_info h5 {
   margin-bottom: 1rem;
   font-size: 1.3rem;
@@ -69,6 +68,7 @@
   width: 100%;
   padding: 0.5rem 0;
   border: none;
+  background: none;
 }
 
 .review_input input:focus {
@@ -110,7 +110,7 @@
 
 .review_item span i {
   font-size: 1.2rem;
-  color: var(--secondary-color);
+  color: #ffc107;
 }
 
 .review_item span {

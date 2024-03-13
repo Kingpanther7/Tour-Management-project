@@ -1,4 +1,4 @@
-.booking{
+.booking {
   padding: 2rem;
   border-radius: 0.5rem;
   border: 1px solid #cacaca68;
@@ -6,7 +6,7 @@
   top: 83px;
 }
 
-.booking__top h3{
+.booking__top h3 {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -23,24 +23,24 @@
   color: var(--text-color);
 }
 
-.booking__top span i{
-  color: var(--secondary-color);
+.booking__top span i {
+  color: #ffc107;
 }
 
-.booking__top{
+.booking__top {
   padding-top: 1rem;
   border-bottom: 1px solid #cacaca68;
 }
 
-.booking__form{
+.booking__form {
   padding-top: 2rem;
 }
 
-.booking__form h5{
+.booking__form h5 {
   margin-bottom: 1rem;
 }
 
-.booking__form input{
+.booking__form input {
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -52,25 +52,33 @@
   border-right: 1px solid #cacaca68;
 }
 
-.booking__bottom li{
+.booking__bottom li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .booking__bottom li span,
-.booking__bottom li h5{
+.booking__bottom li h5 {
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-color);
 }
 
-.booking__bottom{
+.booking__bottom {
   margin-top: 1rem;
 }
 
-.total h5, .total span{
+.total h5,
+.total span {
   color: var(--heading--color) !important;
   font-weight: 700 !important;
   font-size: 1.1rem !important;
+}
+li {
+  background: none;
+}
+
+.text_info {
+  color: var(--heading-color);
 }
