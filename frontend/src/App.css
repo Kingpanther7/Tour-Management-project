@@ -12,6 +12,11 @@
   --subtitle-font-name: "Island Moments", cursive;
   --navbar-shadow-color: #002c3540;
   --search-bar-shadow-color: #ffc10761;
+  --background-gradiant: radial-gradient(
+    circle,
+    rgb(125, 211, 225) 38%,
+    rgb(135, 219, 219) 120%
+  );
 }
 [data-bs-theme="dark"] {
   --menu-color: #000000;
@@ -23,8 +28,13 @@
   --heading-color: #ffffff;
   --bs-list-group-color: #ffffff;
   --bs-list-group-bg: none;
-  --navbar-shadow-color: #009cbb5e;
-  --search-bar-shadow-color: #1ce5d980;
+  --navbar-shadow-color: #009cbbc0;
+  --search-bar-shadow-color: #16beb380;
+  --background-gradiant: radial-gradient(
+    circle,
+    rgba(5, 61, 74, 1) 38%,
+    rgba(72, 206, 235, 1) 450%
+  );
 }
 
 * {

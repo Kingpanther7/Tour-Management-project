@@ -11,7 +11,7 @@
 
 .login__form {
   padding: 50px;
-  background: var(--secondary-color);
+  background: var(--background-gradiant);
   position: relative;
 }
 
@@ -33,13 +33,12 @@
 }
 
 .login__form h2 {
-  color: #fff;
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .login__form {
-  width: 50%;
+  border-radius: 20px;
 }
 
 .login__form input {
@@ -52,7 +51,7 @@
 }
 
 .auth__btn {
-  background: var(--heading-color) !important;
+  background: var(--secondary-color) !important;
   width: 100%;
   color: #fff !important;
 }
@@ -73,10 +72,5 @@
 @media only screen and (max-width: 768px) {
   .login__img {
     display: none;
-  }
-
-  .login__form {
-    width: 90%;
-    margin: auto;
   }
 }
