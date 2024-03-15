@@ -8,6 +8,7 @@
   --heading-color: #000000;
   --menu-color: #ffffff;
   /* --text-color: #6e7074; */
+  --text-color-link: #000000;
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
   --navbar-shadow-color: #002c3540;
@@ -25,6 +26,7 @@
   --secondary-color: #133ba7;
   --bs-body-bg: rgb(4 26 35);
   --my-shadow-color: gray;
+  --text-color-link: #ffffff;
   --heading-color: #ffffff;
   --bs-list-group-color: #ffffff;
   --bs-list-group-bg: none;
