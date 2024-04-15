@@ -1,3 +1,8 @@
+# Tour Booking App
+
+![Javatpoint](/frontend/src/assets/images/logo.png "Logo")  
+<a href="https://packandgotour.netlify.app" target="_top">--> Link to the Website <--</a>
+
 # **Main Feature** 
 
 A trip booking app where users can book flights and tours all in one place.  
